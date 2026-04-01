@@ -119,5 +119,3 @@
 | Vite | 5.0.8 | Build Tool & Dev Server |
 | PostCSS | 8.4.32 | CSS Processing |
 | Autoprefixer | 10.4.16 | CSS Prefixing |
-
-## 🏗️ Architecture
