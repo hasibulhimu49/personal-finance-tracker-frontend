@@ -1,176 +1,159 @@
-<<<<<<< HEAD
-# Personal Finance Tracker Frontend
+# Personal Finance Tracker (Frontend)
 
-A modern React application for tracking personal finances.
+A modern, responsive web application for tracking personal finances, built with React and integrated with a secure Spring Boot backend API.
 
-## Features
+---
 
-- User authentication (login/register)
-- Transaction management (add, edit, delete, list)
-- Dashboard with financial summaries and charts
-- Monthly reports with visualizations
-- Responsive design with dark/light mode support
+## 🌐 Live Demo
 
-## Tech Stack
+👉 https://personal-finance-tracker-frontend-ivory.vercel.app/login
 
-- React 19 with TypeScript
-- Vite
-- Tailwind CSS
-- Shadcn/ui
-- Zustand for state management
-- Axios for API calls
-- React Hook Form with Zod validation
-- Recharts for charts
-- Sonner for notifications
-- React Router DOM for routing
+---
 
-## Getting Started
+## 🔗 Backend API
 
-1. Clone the repository
-2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
-4. Open http://localhost:5173
+- 🌐 Base URL: https://personal-finance-tracker-backend-brs4.onrender.com  
+- 📦 Backend Repository: https://github.com/hasibulhimu49/personal-finance-tracker-backend  
 
-## API
+---
 
-The frontend connects to the backend API at https://personal-finance-tracker-backend-brs4.onrender.com
+## 📌 Overview
 
-## Build
+This frontend application provides an intuitive and user-friendly interface for managing personal finances.  
+Users can track income, expenses, and analyze financial data through interactive dashboards and reports.
 
-`npm run build`
+---
 
-## Scripts
+##  Features
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
+- 🔐 User Authentication (Login/Register)  
+- 💸 Add, Edit, Delete Transactions  
+- 📊 Dashboard with Financial Summary  
+- 📈 Charts & Data Visualization  
+- 🗂️ Category-based Expense Tracking  
+- 📅 Monthly Financial Reports  
+- 🌙 Dark/Light Mode Support  
+- 📱 Fully Responsive Design  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# 💰 Personal Finance Tracker - Frontend
-
-<!-- Core Technologies -->
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.0.8-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.0-06B6D4?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![React Router](https://img.shields.io/badge/React_Router-6.20.0-CA4245?logo=react-router&logoColor=white)](https://reactrouter.com/)
-
-<!-- API & Utilities -->
-[![Axios](https://img.shields.io/badge/Axios-1.6.0-5A29E4?logo=axios&logoColor=white)](https://axios-http.com/)
-[![JWT](https://img.shields.io/badge/JWT-8.0.0-000000?logo=json-web-tokens&logoColor=white)](https://jwt.io/)
-[![date-fns](https://img.shields.io/badge/date--fns-3.0.0-770C56?logo=date-fns&logoColor=white)](https://date-fns.org/)
-[![Recharts](https://img.shields.io/badge/Recharts-2.10.0-22B5BF?logo=recharts&logoColor=white)](https://recharts.org/)
-
-<!-- Deployment -->
-[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white)](https://vercel.com)
-[![Render](https://img.shields.io/badge/Deployed_on-Render-46E3B7?logo=render&logoColor=white)](https://render.com)
-
-<!-- Code Quality -->
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/finance-tracker-frontend?style=social)](https://github.com/yourusername/finance-tracker-frontend/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/finance-tracker-frontend?style=social)](https://github.com/yourusername/finance-tracker-frontend/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/finance-tracker-frontend)](https://github.com/yourusername/finance-tracker-frontend/issues)
-
-<!-- Status -->
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/yourusername/finance-tracker-frontend/graphs/commit-activity)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Ffinance-tracker-frontend.vercel.app)](https://finance-tracker-frontend.vercel.app)
-
-> A modern, responsive web application for tracking personal finances with real-time analytics and beautiful visualizations.
-
-![Finance Tracker Demo](https://via.placeholder.com/800x400?text=Finance+Tracker+Dashboard+Screenshot)
-
-## ✨ Live Demo
-
-🔗 **Live Application:** [https://finance-tracker-frontend.vercel.app](https://finance-tracker-frontend.vercel.app)
-
-📡 **Backend API:** [https://finance-tracker-backend.onrender.com](https://finance-tracker-backend.onrender.com)
-
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Architecture](#-architecture)
-- [Getting Started](#-getting-started)
-- [Environment Variables](#-environment-variables)
-- [Project Structure](#-project-structure)
-- [API Integration](#-api-integration)
-- [Deployment](#-deployment)
-- [Screenshots](#-screenshots)
-- [Contributing](#-contributing)
-- [License](#-license)
-
-## 🚀 Features
-
-### 🔐 Authentication
-- User registration with role selection (USER/ADMIN)
-- JWT-based authentication with secure token storage
-- Protected routes and automatic logout on token expiry
-- Role-based UI rendering (ADMIN sees edit/delete buttons)
-
-### 💰 Transaction Management
-- Create, read, update, and delete transactions
-- Categorize transactions (Food, Rent, Salary, etc.)
-- Track income and expenses separately
-- Real-time balance calculation
-- Date-based filtering
-
-### 📊 Analytics & Reports
-- Interactive dashboard with summary cards
-- Income vs Expense bar charts
-- Category breakdown pie charts
-- Monthly financial reports
-- Export reports as JSON
-
-### 🎨 User Experience
-- Dark/Light mode toggle with persistent preference
-- Responsive design (mobile, tablet, desktop)
-- Real-time toast notifications
-- Loading states and error handling
-- Clean, modern UI with smooth animations
-
-### 👥 Role-Based Access
-| Feature | USER | ADMIN |
-|---------|------|-------|
-| View transactions | ✅ | ✅ |
-| Add transactions | ✅ | ✅ |
-| Edit transactions | ❌ | ✅ |
-| Delete transactions | ❌ | ✅ |
-| View all users | ❌ | ✅ |
+---
 
 ## 🛠️ Tech Stack
 
-### Frontend Core
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| React | 18.2.0 | UI Library |
-| React Router DOM | 6.20.0 | Navigation & Routing |
-| React Context API | - | State Management |
+- **Framework:** React 19 + TypeScript  
+- **Build Tool:** Vite  
+- **Styling:** Tailwind CSS, Shadcn/UI  
+- **State Management:** Zustand  
+- **API Calls:** Axios  
+- **Forms & Validation:** React Hook Form + Zod  
+- **Charts:** Recharts  
+- **Routing:** React Router DOM  
+- **Notifications:** Sonner  
 
-### Styling & UI
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| Tailwind CSS | 3.4.0 | Utility-first CSS Framework |
-| Lucide React | 0.344.0 | SVG Icons |
-| Recharts | 2.10.0 | Charts & Data Visualization |
+---
 
-### API & Utilities
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| Axios | 1.6.0 | HTTP Client |
-| JWT Decode | 4.0.0 | JWT Token Parsing |
-| date-fns | 3.0.0 | Date Manipulation |
-| React Hot Toast | 2.4.1 | Toast Notifications |
+## 🔄 API Integration
 
-### Build Tools
-| Technology | Version | Purpose |
-|------------|---------|---------|
-| Vite | 5.0.8 | Build Tool & Dev Server |
-| PostCSS | 8.4.32 | CSS Processing |
-| Autoprefixer | 10.4.16 | CSS Prefixing |
->>>>>>> a619431c358b08b5c08f88e16070a63be7c965ba
+The frontend communicates with the backend using REST APIs:
+
+- Sends login credentials → receives JWT token  
+- Stores token securely (localStorage/sessionStorage)  
+- Uses token for authenticated API requests  
+- Fetches and displays transaction and report data  
+
+---
+
+## 🧠 Application Flow
+
+User → Login/Register → Receive JWT → Access Dashboard → Manage Transactions → View Reports  
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+├── components/   # Reusable UI components
+├── pages/        # Application pages
+├── hooks/        # Custom React hooks
+├── services/     # API calls and business logic
+├── store/        # Global state (Zustand)
+├── types/        # TypeScript types
+└── utils/        # Helper functions
+```
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+
+### Steps
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/hasibulhimu49/finance-tracker-frontend.git
+
+
+2. Navigate to the project folder:
+
+```bash
+cd finance-tracker-frontend
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🔐 Authentication
+
+- JWT-based authentication  
+- Token stored on client-side  
+- Protected routes using authentication guard  
+
+---
+
+## 🚀 Deployment
+
+- **Frontend:** Vercel  
+- **Backend API:** Render  
+- **Database:** Neon (PostgreSQL)  
+
+---
+
+## 🚀 Future Improvements
+
+- 📊 Advanced analytics dashboard  
+- 🔍 Transaction filtering & search  
+- 📄 Export reports (PDF/Excel)  
+- 📱 Progressive Web App (PWA)  
+
+---
+
+## 👨‍💻 Author
+
+**Mohammad Hasibul Hasan**  
+Frontend & Backend Developer  
+
+- 🔗 LinkedIn: https://www.linkedin.com/in/hasibulhimu49/  
+- 💻 GitHub: https://github.com/hasibulhimu49  
+- 🌐 Portfolio: https://hasibul-dev-portfolio.vercel.app/  
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
