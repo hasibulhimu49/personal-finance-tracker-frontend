@@ -6,7 +6,7 @@ A modern, responsive web application for tracking personal finances, built with 
 
 ## 🌐 Live Demo
 
-👉 https://personal-finance-tracker-frontend-ivory.vercel.app/login
+👉 https://personal-finance-tracker-frontend-ivory.vercel.app/welcome
 
 ---
 
