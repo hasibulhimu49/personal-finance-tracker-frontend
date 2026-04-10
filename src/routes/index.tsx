@@ -12,10 +12,13 @@ import EditTransaction from '../pages/transactions/EditTransaction';
 import Reports from '../pages/reports/Reports';
 import Profile from '../pages/profile/Profile';
 import NotFound from '../pages/NotFound';
+import Landing from '../pages/Landing';
 
 const AppRoutes = () => (
   <Router>
     <Routes>
+      <Route path="/welcome" element={<PublicRoute><Landing /></PublicRoute>} />
+
       <Route element={<PublicRoute><AuthLayout /></PublicRoute>}>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />

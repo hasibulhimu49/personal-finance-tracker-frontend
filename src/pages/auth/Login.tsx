@@ -34,29 +34,41 @@ const Login = () => {
   };
 
   return (
-    <Card className="w-full shadow-2xl border-white/20 bg-card/80 backdrop-blur-xl">
-      <CardHeader>
-        <CardTitle className="text-3xl font-bold">Welcome back</CardTitle>
-        <CardDescription>Enter your credentials to access your account</CardDescription>
+    <Card className="w-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] dark:shadow-[0_8px_30px_rgba(255,255,255,0.05)] border-primary/10 bg-card/60 backdrop-blur-2xl relative overflow-hidden group">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+      <CardHeader className="space-y-2 pb-6">
+        <CardTitle className="text-4xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">Welcome back</CardTitle>
+        <CardDescription className="text-base font-medium">Enter your credentials to access your account</CardDescription>
       </CardHeader>
-      <CardContent>
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+      <CardContent className="relative z-10">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
           <div className="space-y-2">
-            <Label htmlFor="username">Username</Label>
-            <Input id="username" {...register('username')} className="h-12 bg-background/50" />
-            {errors.username && <p className="text-destructive text-sm">{errors.username.message}</p>}
+            <Label htmlFor="username" className="text-sm font-semibold text-muted-foreground">Username</Label>
+            <Input id="username" {...register('username')} className="h-12 bg-background/50 border-input/50 focus:border-primary/50 focus:ring-primary/50 transition-all rounded-xl shadow-sm" placeholder="Enter your username" />
+            {errors.username && <p className="text-destructive text-sm font-medium">{errors.username.message}</p>}
           </div>
           <div className="space-y-2">
-            <Label htmlFor="password">Password</Label>
-            <Input id="password" type="password" {...register('password')} className="h-12 bg-background/50" />
-            {errors.password && <p className="text-destructive text-sm">{errors.password.message}</p>}
+            <div className="flex justify-between items-center">
+              <Label htmlFor="password" className="text-sm font-semibold text-muted-foreground">Password</Label>
+              <Link to="#" className="text-xs font-semibold text-primary/80 hover:text-primary transition-colors">Forgot password?</Link>
+            </div>
+            <Input id="password" type="password" {...register('password')} className="h-12 bg-background/50 border-input/50 focus:border-primary/50 focus:ring-primary/50 transition-all rounded-xl shadow-sm" placeholder="••••••••" />
+            {errors.password && <p className="text-destructive text-sm font-medium">{errors.password.message}</p>}
           </div>
-          <Button type="submit" className="w-full h-12 text-lg font-medium shadow-lg hover:shadow-primary/25 transition-all mt-4" disabled={isLoading}>
-            {isLoading ? 'Logging in...' : 'Login'}
+          <Button type="submit" className="w-full h-12 text-base font-bold rounded-xl shadow-[0_0_20px_rgba(var(--primary),0.2)] hover:shadow-[0_0_30px_rgba(var(--primary),0.4)] transition-all mt-6" disabled={isLoading}>
+            {isLoading ? 'Logging in...' : 'Sign in to account'}
           </Button>
         </form>
-        <p className="mt-6 text-center text-muted-foreground">
-          Don't have an account? <Link to="/register" className="text-primary font-medium hover:underline">Register</Link>
+        <div className="mt-8 relative">
+          <div className="absolute inset-0 flex items-center">
+            <span className="w-full border-t border-border/50" />
+          </div>
+          <div className="relative flex justify-center text-xs uppercase">
+            <span className="bg-card/60 px-2 text-muted-foreground font-semibold backdrop-blur-sm">Or continue with</span>
+          </div>
+        </div>
+        <p className="mt-6 text-center text-muted-foreground font-medium text-sm">
+          Don't have an account? <Link to="/register" className="text-primary hover:text-primary/80 underline underline-offset-4 decoration-primary/30 transition-colors">Register</Link>
         </p>
       </CardContent>
     </Card>
