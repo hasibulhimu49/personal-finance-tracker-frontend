@@ -96,7 +96,7 @@ src/
 
 ```bash
 git clone https://github.com/hasibulhimu49/finance-tracker-frontend.git
-
+```
 
 2. Navigate to the project folder:
 
@@ -111,6 +111,7 @@ npm install
 ```
 
 4. Run the development server:
+
 
 ```bash
 npm run dev
