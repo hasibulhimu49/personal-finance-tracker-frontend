@@ -41,13 +41,11 @@ Users can track income, expenses, and analyze financial data through interactive
 
 - **Framework:** React 19 + TypeScript  
 - **Build Tool:** Vite  
-- **Styling:** Tailwind CSS, Shadcn/UI  
-- **State Management:** Zustand  
+- **Styling:** Tailwind CSS
 - **API Calls:** Axios  
 - **Forms & Validation:** React Hook Form + Zod  
 - **Charts:** Recharts  
 - **Routing:** React Router DOM  
-- **Notifications:** Sonner  
 
 ---
 
